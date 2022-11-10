@@ -3,11 +3,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Box, Button, Modal, TextField } from '@mui/material';
 import { authorsActions } from '../../../../../store/author-slice';
 import { v4 as uuidv4 } from 'uuid';
-import './ModifyAuthors.scss';
 import {
   inputValidation,
   submitValidation,
 } from '../../../../../helpers/authorValidation';
+import './ModifyAuthors.scss';
 
 const ModifyAuthors = (props) => {
   const { authorModalIsOpen, setAuthorModalIsOpen } = props;

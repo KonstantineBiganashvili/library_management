@@ -6,6 +6,7 @@ import DeleteAuthor from '../../common/Modals/AuthorModals/DeleteAuthor/index';
 import { useDispatch } from 'react-redux';
 import { authorsActions } from '../../../store/author-slice';
 import { booksActions } from '../../../store/book-slice';
+import { sanitize } from 'dompurify';
 
 const Author = (props) => {
   const { author } = props;
@@ -41,10 +42,18 @@ const Author = (props) => {
     <>
       <TableRow>
         <TableCell>
-          <Typography>{author_name}</Typography>
+          <Typography
+            dangerouslySetInnerHTML={{
+              __html: sanitize(author_name),
+            }}
+          ></Typography>
         </TableCell>
         <TableCell>
-          <Typography>{author_surname}</Typography>
+          <Typography
+            dangerouslySetInnerHTML={{
+              __html: sanitize(author_surname),
+            }}
+          ></Typography>
         </TableCell>
         <TableCell className="table__btn-cell">
           <CellActionButton color="primary" onClick={handleViewDetails}>

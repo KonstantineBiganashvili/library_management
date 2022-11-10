@@ -7,6 +7,7 @@ import './Book.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { booksActions } from '../../../store/book-slice';
 import { useNavigate } from 'react-router-dom';
+import { sanitize } from 'dompurify';
 
 const Book = (props) => {
   const { book } = props;
@@ -47,13 +48,25 @@ const Book = (props) => {
           )}
         </TableCell>
         <TableCell>
-          <Typography>{title}</Typography>
+          <Typography
+            dangerouslySetInnerHTML={{
+              __html: sanitize(title),
+            }}
+          ></Typography>
         </TableCell>
         <TableCell>
-          <Typography>{author.author_name}</Typography>
+          <Typography
+            dangerouslySetInnerHTML={{
+              __html: sanitize(author.author_name),
+            }}
+          ></Typography>
         </TableCell>
         <TableCell>
-          <Typography>{author.author_surname}</Typography>
+          <Typography
+            dangerouslySetInnerHTML={{
+              __html: sanitize(author.author_surname),
+            }}
+          ></Typography>
         </TableCell>
         <TableCell>
           <Typography>{publication}</Typography>
