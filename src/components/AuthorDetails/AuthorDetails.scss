@@ -1,0 +1,14 @@
+.author-details-container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 20px;
+}

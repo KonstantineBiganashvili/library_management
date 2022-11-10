@@ -1,0 +1,23 @@
+.delete-book-modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0;
+  width: 22vw;
+  height: 120px;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-book-modal__btn-container {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+}

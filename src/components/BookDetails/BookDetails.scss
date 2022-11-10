@@ -1,0 +1,30 @@
+.book-details {
+  width: 50vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 20px 10px;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  .book-details__img-main {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+  }
+
+  .book-details__img-placeholder {
+    font-size: 300px;
+  }
+
+  .book-details__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+  }
+}

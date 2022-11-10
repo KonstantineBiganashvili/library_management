@@ -1,0 +1,45 @@
+.add-book-modal {
+  width: 50vw;
+  background-color: #fff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 5px;
+
+  .add-book-modal__title {
+    font-size: 30px;
+  }
+
+  div {
+    width: 100%;
+    height: 75px;
+
+    div {
+      height: 55px;
+    }
+  }
+
+  .add-book-modal_author-select {
+    height: 75px;
+  }
+
+  .add-book-modal__btn-container {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    height: 40px;
+  }
+
+  .add-book-modal__img {
+    width: 90%;
+    height: 250px;
+    object-fit: contain;
+  }
+}
